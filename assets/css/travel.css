@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "literal";
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+    src: url("/assets/fonts/literal.bold-webfont.woff2") format("woff2"),
+        url("/assets/fonts/literal.bold-webfont.woff") format("woff");
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+article {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    min-width: 320px;
+    flex: 1;
+
+    & a {
+        color: transparent;
+        position: absolute;
+        inset: 0;
+    }
+
+    & img {
+        width: 100%;
+    }
+}
+
+body {
+    color: #fff;
+    background-color: #333;
+    font-family: literal, sans-serif;
+    min-height: 100%;
+    padding: 16px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 15rem;
+}
+
+h1 {
+    color: #eb3729;
+    margin-bottom: 8px;
+    font-size: 30rem;
+}
+
+h2 {
+    color: #eb3729;
+    margin: 4px 0;
+    font-size: 20rem;
+}
+
+header {
+    font-size: 30rem;
+}
+
+html {
+    font-size: 6.25%;
+}
+
+main {
+    gap: 16px;
+    display: flex;
+    flex-flow: row wrap;
+    width: fit-content;
+    margin: auto;
+}
+
+p {
+    font-size: 20rem;
+    margin: 4px 0;
+
+}

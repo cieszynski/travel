@@ -1,17 +1,162 @@
+---
+---
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <title>travel.cieszynski.de</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-  </head>
-  <body>
-    <a href="https://travel.cieszynski.de/faeroeer">Färöer</a><br>
-    <a href="https://travel.cieszynski.de/rumaenien">Rumänien</a><br>
-    <a href="https://travel.cieszynski.de/marokko">Marokko</a><br>
-    <a href="https://travel.cieszynski.de/kambodscha">Kambodscha</a><br>
-    <a href="https://travel.cieszynski.de/vietnam">Vietnam</a><br>
-    <a href="https://travel.cieszynski.de/namibia">Namibia</a><br>
-    <a href="https://travel.cieszynski.de/japan">Japan</a><br>
-  </body>
+
+<head>
+  <title>cieszynski.de - travel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="robots" content="index nofollow">
+
+  <link rel="stylesheet" href="{{ '/assets/css/travel.css' | relative_url }}">
+  <!-- 
+    magick mogrify -format webp -quality 75 -define webp:method=6 -define webp:use-sharp-yuv=1 *.jpg
+    magick mogrify -format avif -depth 14 -define heic:speed=8 *.jpg
+    -->
+  <base target="_blank">
+</head>
+
+<body>
+  <header>
+    <a href="/">cieszynski.de</a>/<a href="/travel">travel</a>
+    <h1>Travel</h1>
+    <p>Meine Lieblingsbilder der vergangenen Reisen.</p>
+  </header>
+  <main>
+    <article>
+      <header>
+        <h2>República Argentina</h2>
+        <p>Wüste, Gletscher & Metropolen</p>
+      </header>
+      <picture>
+        <source srcset="{{ '/assets/images/argentinien-teaser.avif' | relative_url }}" type="image/avif">
+        <source srcset="{{ '/assets/images/argentinien-teaser.webp' | relative_url }}" type="image/webp">
+        <img src="{{ '/assets/images/argentinien-teaser.jpg' | relative_url }}" alt="">
+      </picture>
+      <a href="https://photos.app.goo.gl/7zyktSfX1SUAN25W7">zu den Bildern</a>
+    </article>
+
+    <article>
+      <header>
+        <h2>República de Chile</h2>
+        <p>Wüste, Gletscher & Metropolen</p>
+      </header>
+      <picture>
+        <source srcset="{{ '/assets/images/chile-teaser.avif' | relative_url }}" type="image/avif">
+        <source srcset="{{ '/assets/images/chile-teaser.webp' | relative_url }}" type="image/webp">
+        <img src="{{ '/assets/images/chile-teaser.jpg' | relative_url }}" alt="">
+      </picture>
+      <a href="https://photos.app.goo.gl/v6HUxB4xS357bWUN6">zu den Bildern</a>
+    </article>
+
+    <article>
+      <header>
+        <h2>Açores</h2>
+        <p>Reise auf die Azoren</p>
+      </header>
+      <picture>
+        <source srcset="{{ '/assets/images/azoren-teaser.avif' | relative_url }}" type="image/avif">
+        <source srcset="{{ '/assets/images/azoren-teaser.webp' | relative_url }}" type="image/webp">
+        <img src="{{ '/assets/images/azoren-teaser.jpg' | relative_url }}" alt="">
+      </picture>
+      <a href="https://photos.app.goo.gl/v6HUxB4xS357bWUN6">zu den Bildern</a>
+    </article>
+
+    <article>
+      <header>
+        <h2>Føroyar</h2>
+        <p>Reise zu den Färöer</p>
+      </header>
+      <picture>
+        <source srcset="{{ '/assets/images/faeroeer-teaser.avif' | relative_url }}" type="image/avif">
+        <source srcset="{{ '/assets/images/faeroeer-teaser.webp' | relative_url }}" type="image/webp">
+        <img src="{{ '/assets/images/faeroeer-teaser.jpg' | relative_url }}" alt="">
+      </picture>
+      <a href="https://photos.app.goo.gl/dzdpV1PuGDCgjfHQ8">zu den Bildern</a>
+    </article>
+
+    <article>
+      <header>
+        <h2>Rumänien</h2>
+        <p>Siebenbürgen</p>
+      </header>
+      <picture>
+        <source srcset="{{ '/assets/images/rumaenien-teaser.avif' | relative_url }}" type="image/avif">
+        <source srcset="{{ '/assets/images/rumaenien-teaser.webp' | relative_url }}" type="image/webp">
+        <img src="{{ '/assets/images/rumaenien-teaser.jpg' | relative_url }}" alt="">
+      </picture>
+      <a href="https://photos.app.goo.gl/QhxsDggELJsrELn18">zu den Bildern</a>
+    </article>
+
+    <article>
+      <header>
+        <h2>Marokko</h2>
+        <p>Vielseitig aktiv in Marrakech</p>
+      </header>
+      <picture>
+        <source srcset="{{ '/assets/images/marokko-teaser.avif' | relative_url }}" type="image/avif">
+        <source srcset="{{ '/assets/images/marokko-teaser.webp' | relative_url }}" type="image/webp">
+        <img src="{{ '/assets/images/marokko-teaser.jpg' | relative_url }}" alt="">
+      </picture>
+      <a href="https://photos.app.goo.gl/EB7nn92DEn4TfaN36">zu den Bildern</a>
+    </article>
+
+    <article>
+      <header>
+        <h2>Kambodscha</h2>
+        <p>Bayon</p>
+      </header>
+      <picture>
+        <source srcset="{{ '/assets/images/kambodscha-teaser.avif' | relative_url }}" type="image/avif">
+        <source srcset="{{ '/assets/images/kambodscha-teaser.webp' | relative_url }}" type="image/webp">
+        <img src="{{ '/assets/images/kambodscha-teaser.jpg' | relative_url }}" alt="">
+      </picture>
+      <a href="https://photos.app.goo.gl/6gZCzTtZGs9hVt5L8">zu den Bildern</a>
+    </article>
+
+    <article>
+      <header>
+        <h2>Vietnam</h2>
+        <p>Bayon</p>
+      </header>
+      <picture>
+        <source srcset="{{ '/assets/images/vietnam-teaser.avif' | relative_url }}" type="image/avif">
+        <source srcset="{{ '/assets/images/vietnam-teaser.webp' | relative_url }}" type="image/webp">
+        <img src="{{ '/assets/images/vietnam-teaser.jpg' | relative_url }}" alt="">
+      </picture>
+      <a href="https://photos.app.goo.gl/1CavvizGaVmFAg4x7">zu den Bildern</a>
+    </article>
+
+    <article>
+      <header>
+        <h2>Namibia</h2>
+        <p>Sossusvlei</p>
+      </header>
+      <picture>
+        <source srcset="{{ '/assets/images/namibia-teaser.avif' | relative_url }}" type="image/avif">
+        <source srcset="{{ '/assets/images/namibia-teaser.webp' | relative_url }}" type="image/webp">
+        <img src="{{ '/assets/images/namibia-teaser.jpg' | relative_url }}" alt="">
+      </picture>
+      <a href="https://photos.app.goo.gl/yfDBvOCsPlmK3wpC3">zu den Bildern</a>
+    </article>
+
+    <article>
+      <header>
+        <h2>Japan</h2>
+        <p>Land des Lächelns</p>
+      </header>
+      <picture>
+        <source srcset="{{ '/assets/images/japan-teaser.avif' | relative_url }}" type="image/avif">
+        <source srcset="{{ '/assets/images/japan-teaser.webp' | relative_url }}" type="image/webp">
+        <img src="{{ '/assets/images/japan-teaser.jpg' | relative_url }}" alt="">
+      </picture>
+      <a href="https://goo.gl/photos/ve8d4E53hE1TzXBaA">zu den Bildern</a>
+    </article>
+  </main>
+  <footer>
+    <a href="/rechtliches.html">Impressum | Datenschutz</a>
+  </footer>
+</body>
+
 </html>
