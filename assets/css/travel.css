@@ -1,4 +1,66 @@
-@font-face {
+@import url("/assets/css/default.css");
+
+@layer theme {
+
+    article {
+        position: relative;
+        border-radius: 16px;
+        min-width: min(100%, 300px);
+        overflow: clip;
+        flex: 1;
+
+        &>a {
+            display: block;
+            position: absolute;
+            color: transparent;
+            inset: 0;
+        }
+
+        & hgroup {
+            background-image: linear-gradient(to top, #00000055 0 80%, transparent);
+            display: flex;
+            flex-flow: column;
+            align-items: end;
+            justify-content: end;
+            padding: 16px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            right: 0;
+        }
+
+        & img {
+            display: block;
+            border-radius: 16px;
+            width: 100%;
+        }
+    }
+
+    body {
+        color: #fff;
+        background-color: #666;
+        font-family: fjallaoneregular;
+        padding: 16px;
+        gap: 16px;
+    }
+
+    footer {
+        background-color: #555;
+    }
+
+    header {
+        display: flex;
+        border-radius: 16px;
+        background-color: #555;
+        padding: 16px;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+/* @font-face {
     font-family: "literal";
     font-stretch: normal;
     font-style: normal;
@@ -23,7 +85,7 @@ article {
     position: relative;
     display: flex;
     flex-direction: column-reverse;
-    min-width: min(100%, 320px); /* min(100%, 320px): firefox */
+    min-width: min(100%, 320px); /* min(100%, 320px): firefox * /
     flex: 1;
 
     & a {
@@ -83,4 +145,4 @@ p {
     font-size: 16rem;
     margin: 4px 0;
 
-}
+} */
